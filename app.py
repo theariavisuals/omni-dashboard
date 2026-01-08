@@ -208,8 +208,7 @@ def main():
                 "Short OI": "${:,.0f}",
             }, na_rep="-"),
             column_order=["Ticker", "Name", "Price", "Volume 24h", "Hourly Funding Rate", "Base Spread (bps)", "FDV", "Long OI", "Short OI"],
-            use_container_width=True,
-            height=600,
+            width="stretch",
             hide_index=True
         )
 
@@ -226,7 +225,8 @@ def main():
                 "FDV / Total OI": "{:,.2f}"
             }, na_rep="-"),
             column_order=["Ticker", "FDV / Volume 24h", "FDV / Long OI", "FDV / Short OI", "FDV / Total OI"],
-            use_container_width=True,
+            width="stretch",
+            height=600,
             hide_index=True
         )
 
