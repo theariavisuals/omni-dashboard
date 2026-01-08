@@ -164,7 +164,7 @@ def main():
                 top_fdv_vol[["Ticker", "FDV / Volume 24h"]].style.format({
                     "FDV / Volume 24h": "{:,.2f}"
                 }),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
             
@@ -175,7 +175,7 @@ def main():
                 top_fdv_oi[["Ticker", "FDV / Total OI"]].style.format({
                      "FDV / Total OI": "{:,.2f}"
                 }),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -190,7 +190,7 @@ def main():
                 top_funding[["Ticker", "Hourly Funding Rate"]].style.format({
                      "Hourly Funding Rate": "{:.4%}" # Display with precision since we have small numbers
                 }),
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
